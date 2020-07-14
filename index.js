@@ -155,7 +155,7 @@ else if (!message.author.bot){
 	else {
 		nhaclenh=false
 	}
-	if (mscontent.startsWith('rpg hunt')){
+if (mscontent.startsWith('rpg hunt')||mscontent.startsWith('rpg ascended hunt')){
 		message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 			max: 1,
 			time: 8000,
@@ -173,7 +173,7 @@ else if (!message.author.bot){
 			console.log('hunt');
 		});
 	}
-	else if (mscontent == 'rpg chop'){
+	else if (mscontent == 'rpg chop'||mscontent == 'rpg ascended chop'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -191,7 +191,7 @@ else if (!message.author.bot){
 				console.log('chop')
 			});
 	}
-	else if (mscontent == 'rpg axe'){
+	else if (mscontent == 'rpg axe'||mscontent == 'rpg ascended axe'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -209,7 +209,7 @@ else if (!message.author.bot){
 				console.log('axe')
 			});
 	}
-	else if (mscontent == 'rpg bowsaw'){
+	else if (mscontent == 'rpg bowsaw'||mscontent == 'rpg ascended bowsaw'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -227,7 +227,7 @@ else if (!message.author.bot){
 				console.log('bowsaw')
 			});
 	}
-	else if (mscontent == 'rpg chainsaw'){
+	else if (mscontent == 'rpg chainsaw'||mscontent == 'rpg ascended chainsaw'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -245,7 +245,7 @@ else if (!message.author.bot){
 				console.log('chainsaw')
 			});
 	}
-	else if (mscontent == 'rpg fish'){
+	else if (mscontent == 'rpg fish'||mscontent == 'rpg ascended fish'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -263,7 +263,7 @@ else if (!message.author.bot){
 				console.log('fish')
 			});
 	}
-	else if (mscontent == 'rpg net'){
+	else if (mscontent == 'rpg net'||mscontent == 'rpg ascended net'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -281,7 +281,7 @@ else if (!message.author.bot){
 				console.log('net')
 			});
 	}
-	else if (mscontent == 'rpg boat'){
+	else if (mscontent == 'rpg boat'||mscontent == 'rpg ascended boat'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -299,7 +299,7 @@ else if (!message.author.bot){
 				console.log('boat')
 			});
 	}
-	else if (mscontent == 'rpg bigboat'){
+	else if (mscontent == 'rpg bigboat'||mscontent == 'rpg ascended bigboat'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -317,7 +317,7 @@ else if (!message.author.bot){
 				console.log('bigboat')
 			});
 }
-else if (mscontent == 'rpg pickup'){
+else if (mscontent == 'rpg pickup'||mscontent == 'rpg ascended pickup'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -335,7 +335,7 @@ else if (mscontent == 'rpg pickup'){
 				console.log('pickup')
 			});
 }
-else if (mscontent == 'rpg ladder'){
+else if (mscontent == 'rpg ladder'||mscontent == 'rpg ascended ladder'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -353,7 +353,7 @@ else if (mscontent == 'rpg ladder'){
 				console.log('ladder')
 			});
 }
-else if (mscontent == 'rpg tractor'){
+else if (mscontent == 'rpg tractor'||mscontent == 'rpg ascended tractor'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -371,7 +371,7 @@ else if (mscontent == 'rpg tractor'){
 				console.log('tractor')
 			});
 }
-else if (mscontent == 'rpg greenhouse'){
+else if (mscontent == 'rpg greenhouse'||mscontent == 'rpg ascended greenhouse'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -389,7 +389,7 @@ else if (mscontent == 'rpg greenhouse'){
 				console.log('greenhouse')
 			});
 }
-else if (mscontent == 'rpg mine'){
+else if (mscontent == 'rpg mine'||mscontent == 'rpg ascended mine'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -407,7 +407,7 @@ else if (mscontent == 'rpg mine'){
 				console.log('mine')
 			});
 }
-else if (mscontent == 'rpg pickaxe'){
+else if (mscontent == 'rpg pickaxe'||mscontent == 'rpg ascended pickaxe'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -425,7 +425,7 @@ else if (mscontent == 'rpg pickaxe'){
 				console.log('pickaxe')
 			});
 }
-else if (mscontent == 'rpg drill'){
+else if (mscontent == 'rpg drill'||mscontent == 'rpg ascended drill'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -443,7 +443,7 @@ else if (mscontent == 'rpg drill'){
 				console.log('drill')
 			});
 }
-else if (mscontent == 'rpg dynamite'){
+else if (mscontent == 'rpg dynamite'||mscontent == 'rpg ascended dynamite'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -461,7 +461,7 @@ else if (mscontent == 'rpg dynamite'){
 				console.log('dynamite')
 			});
 }
-else if (mscontent == 'rpg tr'||mscontent == 'rpg training'){
+else if (mscontent == 'rpg tr'||mscontent == 'rpg training'||mscontent == 'rpg ascended tr'||mscontent == 'rpg ascended training'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
@@ -479,7 +479,7 @@ else if (mscontent == 'rpg tr'||mscontent == 'rpg training'){
 			console.log('training')
 			});
 }
-else if (mscontent == 'rpg adv'||mscontent == 'rpg adventure'){
+else if (mscontent == 'rpg adv'||mscontent == 'rpg adventure'||mscontent == 'rpg ascended adv'||mscontent == 'rpg ascended adventure'){
 			message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 				max: 1,
 				time: 8000,
