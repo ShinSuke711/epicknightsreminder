@@ -48,7 +48,6 @@ client.on("message", message => {
 				message.channel.send('**__CATCH__** <:egg:722606388957937753> <:egg:722606388957937753>  <@&726382616391057452> ')
 			}
 		}
-	}
 	if (char1 == '*') {
 		if (mscontent.includes('is training')){ //training
 			var kq = '?'
