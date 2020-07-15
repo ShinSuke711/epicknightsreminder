@@ -11,6 +11,7 @@ client.on("ready", () => {
 });
 client.on("message", message => {
 	var mscontent = message.content
+	if (char1 == '*') {
 	if(message.author.id=='555955826880413696') {//cái này là id của thằng EPIC RPG
 		if (mscontent.includes('is training')){ //training
 			var kq = '?'
