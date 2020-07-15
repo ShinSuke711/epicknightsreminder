@@ -11,8 +11,47 @@ client.on("ready", () => {
 });
 client.on("message", message => {
 	var mscontent = message.content
-	if (char1 == '*') {
 	if(message.author.id=='555955826880413696') {//cái này là id của thằng EPIC RPG
+var char1 = mscontent.charAt(0)
+        if (typeof char1 != 'string'){
+            char1 ='0'
+        }
+        var descriptiontext=''
+		var nametext=''
+		if (message.embeds.length==1){
+			descriptiontext=message.embeds[0].description
+			nametext=message.embeds[0].fields[0].name
+		}
+		if (typeof descriptiontext =='string'){
+			if (descriptiontext.startsWith('<:epicrpgarena')){
+				message.channel.send('**__Arena__** <:epicrpgarena:722613850624491590> <:arenacookie:719150450540019743> <@&726382616391057450> ')
+				//thay emoji id va id role arena vao dong tren
+			}
+		}
+		if (typeof nametext == 'string'){
+			if (nametext.startsWith('Help ')){
+				message.channel.send('**__Mini Boss__** :dagger: :dagger: <@&726382616391057449> ')
+			}
+			else if (nametext.startsWith('**A MEGALODON')){
+				message.channel.send('**__FISH__** <:normiefish:719148298518265927> <:normiefish:719148298518265927> <@&726382616391057455> ')
+			}
+			else if (nametext.startsWith('**AN EPIC TREE')){
+				message.channel.send('**__CHOP__** <:woodenlog:719147724393676841> <:woodenlog:719147724393676841> <@&726382616391057456> ')
+			}
+			else if (nametext.startsWith("**IT'S RAINING")){
+				message.channel.send('**__CATCH__** <:coin:719325049881886751> <:coin:719325049881886751> <@&726382616391057457> ')
+			}
+			else if (nametext.startsWith("**A LEGENDARY BOSS")){
+				message.channel.send('**__LEGENDARY BOSS SPAWNED__** <:D9:721649592617271296> <:D11:721649631095685120> <:D10:721649619305627730> <@&721835806553276456> ')
+			}
+			else if (nametext.startsWith("**A BUNNY BOSS")){
+				message.channel.send('**__BUNNY BOSS SPAWNED__** <@&726382616391057452> ')
+			}
+			else if (nametext.startsWith("**EGGS ARE FALLING")){
+				message.channel.send('**__CATCH__** <:egg:722606388957937753> <:egg:722606388957937753>  <@&726382616391057452> ')
+			}
+		}
+	if (char1 == '*') {
 		if (mscontent.includes('is training')){ //training
 			var kq = '?'
 			mscontent = mscontent.substring(mscontent.indexOf('is training')+18)//xóa tất cả các ký tự từ đầu chuỗi đến hết 'is training in the'
