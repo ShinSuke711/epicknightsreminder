@@ -19,9 +19,11 @@ var char1 = mscontent.charAt(0)
         var descriptiontext=''
 		var nametext=''
 		if (message.embeds.length==1){
-			descriptiontext=message.embeds[0].description
-			nametext=message.embeds[0].fields[0].name
-		}
+            descriptiontext=message.embeds[0].description
+            if (memessage.embeds[0].fields.length != 0){
+                nametext=message.embeds[0].fields[0].name
+            }
+        }
 		if (typeof descriptiontext =='string'){
 			if (descriptiontext.startsWith('<:epicrpgarena')){
 				message.channel.send('**__Arena__** <:epicrpgarena:722613850624491590> <:arenacookie:719150450540019743> <@&726382616391057450> ')
@@ -588,6 +590,35 @@ else if (mscontent == 'n' || mscontent == 'no'){
 			.catch(() => {
 				console.log('quest2')
 			});
+}
+else if (mscontent == 'rpg guild raid' ){
+            message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.embeds.length==1, {
+                max: 1,
+                time: 2000,
+                errors: ['time']
+            })
+            .then(collected => {
+                var descriptiontext=collected.first().embeds[0].description
+                if (nhaclenh){
+                    if (typeof descriptiontext =='string'){
+                        if (descriptiontext.startsWith(':crossed_swords: **'+message.author.username)){
+                            setTimeout(function(){
+                                if (message.member.roles.cache.has('726382616395382830')){
+                                    message.channel.send('**__GUILD RAID__** is ready! <@&726382616395382830> ')
+                                }
+                                if (message.member.roles.cache.has('726382616395382829')){
+                                    message.channel.send('**__GUILD RAID__** is ready! <@&726382616395382829> ')
+                                }
+                                if (message.member.roles.cache.has('731608170241458227')){
+                                    message.channel.send('**__GUILD RAID__** is ready! <@&731608170241458227> ')
+                                }
+                            }, 7200000);
+                        }
+                    }
+                }
+            })
+            .catch(() => {
+            });
 }
 }
 });
