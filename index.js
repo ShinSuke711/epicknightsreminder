@@ -20,7 +20,7 @@ var char1 = mscontent.charAt(0)
 		var nametext=''
 		if (message.embeds.length==1){
             descriptiontext=message.embeds[0].description
-            if (memessage.embeds[0].fields.length != 0){
+            if (message.embeds[0].fields.length != 0){
                 nametext=message.embeds[0].fields[0].name
             }
         }
