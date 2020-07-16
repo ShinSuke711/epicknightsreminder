@@ -589,32 +589,6 @@ else if (mscontent == 'n' || mscontent == 'no'){
 				console.log('quest2')
 			});
 }
-else if (mscontent == 'rpg guild raid' ){
-            message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.embeds.length==1, {
-                max: 1,
-                time: 2000,
-                errors: ['time']
-            })
-            .then(collected => {
-                var descriptiontext=collected.first().embeds[0].description
-                if (nhaclenh){
-                    if (typeof descriptiontext =='string'){
-                        if (descriptiontext.startsWith(':crossed_swords: **'+message.author.username)){
-                            setTimeout(function(){
-                                if (message.member.roles.cache.has('726382616395382830')){
-                                    message.channel.send('**__GUILD RAID__** is ready! <@&726382616395382830> ')
-                                }
-                                if (message.member.roles.cache.has('726382616395382829')){
-                                    message.channel.send('**__GUILD RAID__** is ready! <@&726382616395382829> ')
-                                }
-                            }, 7200000);
-                        }
-                    }
-                }
-            })
-            .catch(() => {
-            });
-}
 }
 });
 client.login(process.env.token);
