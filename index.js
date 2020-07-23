@@ -180,16 +180,16 @@ else if (!message.author.bot){
 	var nhaclenh=true
 	var multi = 1	
 	if (message.member.roles.cache.has('726382616391057448')){ //thay id role reminder vào
-		multi = 1
-	}
-	else if (message.member.roles.cache.has('726382616239931451')){ //thay id role giảm 10% cd
-		multi = 0.9
-	}
-	else if (message.member.roles.cache.has('726382616239931449')){ //thay id role giảm 20% cd vào đây
 		multi = 0.8
 	}
+	else if (message.member.roles.cache.has('726382616239931451')){ //thay id role giảm 10% cd
+		multi = 0.7
+	}
+	else if (message.member.roles.cache.has('726382616239931449')){ //thay id role giảm 20% cd vào đây
+		multi = 0.6
+	}
 	else if (message.member.roles.cache.has('726382616239931447')){ //thay id role giảm 35% cd vào đây
-		multi = 0.65
+		multi = 0.45
 	}
 	else {
 		nhaclenh=false
