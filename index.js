@@ -194,7 +194,6 @@ else if (!message.author.bot){
 	else {
 		nhaclenh=false
 	}
-	multi=multi*0.8
 if (mscontent.startsWith('rpg hunt')||mscontent.startsWith('rpg ascended hunt')){
 		message.channel.awaitMessages(response => response.author.id=='555955826880413696'&&response.content.startsWith(message.author.username,2), {
 			max: 1,
